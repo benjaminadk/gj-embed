@@ -18,7 +18,6 @@ add_action( 'init', function() {
       wp_enqueue_style( 'erw', get_site_url() . $asset_manifest[ 'main.css' ] );
     }
 
-    var_dump(get_site_url() . $asset_manifest[ 'runtime-main.js' ]);
     wp_enqueue_script('gj-embed-runtime', get_site_url() . $asset_manifest[ 'runtime-main.js' ], array(), null, true );
 
     wp_enqueue_script('gj-embed-main', get_site_url() . $asset_manifest[ 'main.js' ], array('gj-embed-runtime'), null, true );
